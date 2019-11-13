@@ -9,10 +9,10 @@ import java.util.List;
 
 public class Course {
 
-    public String title;
-    public Lecturer lecturer;
-    public final List<Date> dates = new ArrayList<>();
-    public final List<Student> attendees = new ArrayList<>();
+    private String title;
+    private Lecturer lecturer;
+    private final List<Date> dates = new ArrayList<>();
+    private final List<Student> attendees = new ArrayList<>();
 
     public Course(String title) {
         this.title = title;
@@ -20,5 +20,29 @@ public class Course {
 
     public void printCourseTitle() {
         System.out.println(title);
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public Lecturer getLecturer() {
+        return lecturer;
+    }
+
+    public void setLecturer(Lecturer lecturer) {
+        this.lecturer = lecturer;
+    }
+
+    public List<Date> getDates() {
+        return dates;
+    }
+
+    public List<Student> getAttendees() {
+        return attendees;
     }
 }

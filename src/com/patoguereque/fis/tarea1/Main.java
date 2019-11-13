@@ -17,7 +17,7 @@ public class Main {
 
     public Main() throws MalformedURLException, ParseException {
         Course course = new Course("SEECx");
-        course.dates.add(DATE_FORMAT.parse("2017-05-30 12:00"));
+        course.getDates().add(DATE_FORMAT.parse("2017-05-30 12:00"));
         course.printCourseTitle();
 
         LectureCourse lectureCourse = new LectureCourse("POM", new Point(100, 70));

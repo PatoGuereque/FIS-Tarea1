@@ -4,10 +4,18 @@ import java.net.URL;
 
 public class OnlineCourse extends Course {
 
-    public URL url;
+    private URL url;
 
     public OnlineCourse(String title, URL url) {
         super(title);
+        this.url = url;
+    }
+
+    public URL getUrl() {
+        return url;
+    }
+
+    public void setUrl(URL url) {
         this.url = url;
     }
 }

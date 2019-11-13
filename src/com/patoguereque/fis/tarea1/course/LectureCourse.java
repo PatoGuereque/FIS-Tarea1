@@ -4,10 +4,18 @@ import java.awt.*;
 
 public class LectureCourse extends Course {
 
-    public Point location;
+    private Point location;
 
     public LectureCourse(String title, Point location) {
         super(title);
+        this.location = location;
+    }
+
+    public Point getLocation() {
+        return location;
+    }
+
+    public void setLocation(Point location) {
         this.location = location;
     }
 }
